@@ -5,10 +5,9 @@ require_relative "../lib/interactive_record.rb"
 require_relative "../lib/song.rb"
 require_relative "../config/environment.rb"
 
-song = Song.new(name: "Helloz, album: "25")
-puts "song name: " + song.name
-puts "song album: " + song.album
-song.save
+song name: Hello
+song album: 25
+{"id"=>1, "name"=>"Hello", "album"=>"25"}
 
 puts Song.find_by_name("Hello")
 
